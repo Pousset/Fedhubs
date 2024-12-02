@@ -1,0 +1,38 @@
+.toggle-switch {
+  position: relative;
+  display: inline-flex;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.toggle-switch input[type="radio"] {
+  display: none;
+}
+
+.toggle-switch label {
+  padding: 10px 30px;
+  display: inline-block;
+  flex: 1;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: var(--bs-black);
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.toggle-switch label:not(:last-child) {
+  border-right: 1px solid #f0f0f0;
+}
+
+.toggle-switch input[type="radio"]:checked + label {
+  background-color: var(--bs-primary);
+  border-radius: 30px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
